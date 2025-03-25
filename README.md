@@ -1,82 +1,36 @@
-# AI-Powered UX & Conversion Insights Platform
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This project is an AI-powered platform designed to provide UX and conversion insights. It consists of a **frontend** (React + Tailwind) and a **backend** (Node.js) working together to deliver AI-generated insights via email.
+## Getting Started
 
-## Features
+First, run the development server:
 
-- A simple landing page with an email input.
-- Integration with OpenAI to generate structured UX insights.
-- Professional email formatting for delivering insights.
-- Deployment on Vercel or Firebase.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Prerequisites
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Ensure you have the following installed:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- [Node.js](https://nodejs.org/)
-- A valid OpenAI API key.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Installation
+## Learn More
 
-### Backend
+To learn more about Next.js, take a look at the following resources:
 
-1. Navigate to the `cx-conv-be` directory.
-2. Create a `.env` file with the following variables:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-   ```env
-   PORT=8080
-   MAIL_APP_PASSWORD=
-   ADMIN_EMAIL=
-   LOG_LEVEL=
-   OPEN_AI_KEY=
-   ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-   - `MAIL_APP_PASSWORD`: A generated app password from Google for the mail sender.
-   - `ADMIN_EMAIL`: The email from which letters are sent.
-   - `LOG_LEVEL`: May be empty.
-   - `OPEN_AI_KEY`: Your OpenAI API key.
+## Deploy on Vercel
 
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Start the backend server:
-   ```sh
-   npm run dev
-   ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Frontend
-
-1. Navigate to the `cx-conv-fe` directory.
-2. Create a `.env` file with the following variable:
-   ```env
-   VITE_API_URL=http://localhost:8080/api
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Start the development server:
-   ```sh
-   npm run dev
-   ```
-
-## Deployment
-
-Deploy the project on [Vercel](https://vercel.com/) or [Firebase](https://firebase.google.com/).
-
-## Test Task Description
-
-1. Create a simple landing page (React + Tailwind) with an email input.
-2. Connect to OpenAI and send a structured prompt for UX insights.
-3. Send AI-generated insights via email (formatted professionally if possible).
-4. Deploy the project on Vercel or Firebase and commit it to GitHub.
-
-## Project Structure
-
-- `cx-conv-be`: Backend service for handling API requests and sending emails.
-- `cx-conv-fe`: Frontend application for user interaction.
-
-## License
-
-This project is for educational and testing purposes only.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
